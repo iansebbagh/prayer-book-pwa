@@ -1,0 +1,36 @@
+@mixin box_shadow {
+    box-shadow: rgba(255, 255, 255, 0.74) 0px 0px 3px !important;
+}
+
+.home-div {
+    .home-card-1 {
+        background-color: inherit;
+        @include box_shadow;
+    }
+}
+
+.showmore {
+    width: 100%;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.showless {
+    word-wrap: break-word;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.clearDB {
+    color: blue;
+}
+
+.functionbuttons {
+    display: flex;
+    justify-content: space-between;
+}

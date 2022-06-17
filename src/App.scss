@@ -1,0 +1,17 @@
+@import '_colors';
+
+.App {
+  background-color: $bg-main;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bd-1 {
+  border: 1px solid red !important;
+}
+
+footer {
+  margin-top: auto;
+}

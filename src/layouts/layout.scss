@@ -1,0 +1,68 @@
+@import '../_colors';
+
+.main-nav {
+    background-color: $bg-color1 !important;
+    box-shadow: rgba(255, 255, 255, 0.74) 0px 0px 3px !important;
+    #responsive-navbar-nav {
+        @mixin active-nav {
+            // transform: scale(1.02);
+            margin-bottom: -11px;
+            border-bottom: 2px solid white;        
+     }
+        .me-auto.navbar-nav{
+            a {
+                font-family:sans-serif;
+                font-size: 28px !important ;
+                font-weight: bold;
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            a.active {
+                color: rgb(110, 233, 86);
+                text-shadow: 0px 0px 14px #ffffff;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $bg-color1 !important;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.addBtn {
+    border-radius: 40px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.modal-dialog{
+    padding: 30px;
+    .modal-content {
+        box-shadow: 0 1px 5px 0px white;
+        background-color: rgb(14, 9, 9);   
+        color: white;
+        border-radius: 20px;
+        margin-top: 100px;
+        .modal-header{
+            justify-content: center;
+            .btn-close {
+                background-color: rgba(255,255,255,0.5);
+                border: 1px solid white;
+                display: none;
+            }
+        }
+        input, textarea {
+            background-color: #444;
+            color: white
+        }    
+        input:focus, textarea:focus {
+            background-color: white;
+            color: black;
+        }    
+    }
+}

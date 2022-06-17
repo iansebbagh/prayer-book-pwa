@@ -1,0 +1,11 @@
+@mixin box_shadow {
+    box-shadow: rgba(255, 255, 255, 0.74) 0px 0px 3px !important;
+}
+
+.home-div {
+    .home-card-1 {
+        background-color: inherit;
+        @include box_shadow;
+        
+    }
+}
